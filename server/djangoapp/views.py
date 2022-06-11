@@ -48,6 +48,11 @@ def aboutus(request):
     if request.method == "GET":
         return render(request, 'djangoapp/about.html', context)
 
+def contactus(request):
+    context = {}
+    if request.method == "GET":
+        return render(request, 'djangoapp/contact.html', context)
+
 # Create a `get_dealer_details` view to render the reviews of a dealer
 # def get_dealer_details(request, dealer_id):
 # ...
